@@ -22,23 +22,55 @@ body {
 
 #input-area {
   display: flex;
+  flex-direction: column;
   padding: 10px;
   border-top: 1px solid #ccc;
 }
 
+#preview-container {
+  display: flex;
+  margin-bottom: 5px;
+  align-self: flex-start;
+}
+
+#input-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 #message-input {
   flex-grow: 1;
-  margin-right: 10px;
   padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+#input-area button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 5px;
+  line-height: 0;
+}
+
+#send-button {
+  color: #4CAF50;
+}
+
+#image-preview {
+  max-width: 50px;
+  max-height: 50px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-#send-button {
-  padding: 8px 15px;
-  background-color: #4CAF50;
-  border: none;
-  color: white;
+#file-preview {
+  padding: 5px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  cursor: pointer;
+  background-color: #f2f2f2;
+  font-size: 14px;
 }
